@@ -16,44 +16,14 @@
 
 <body>
 
-    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <form class="d-flex">
-                    <input id="busqueda" class="form-control me-2" type="search"
-                        placeholder="Artista/Banda" aria-label="Search">
-                    <button class="btn btn-primary" type="submit" onclick="buscar()">Buscar</button>               
-            </form>
-        </div>
-    </nav>-->
 
-    <!--<form>
-        <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="busqueda" placeholder="Artista/Banda">
-            <label for="floatingInput">Apellido</label>
-        </div>
-    <div claas="col-12">
-        <div class="form-floating mb-3">
-            <inpunt type="text" class="form-control" id="buscar" placeholder="Artista/Banda" required>
-                <label for="floatinginput">Apellido</label>
-        </div>
-
-    </div>
-    <div>
-        <button class="btn btn-primary" onclick="buscar()">Buscar</button>
-        <button type="submit" class="btn btn-primary" onclick="buscar()">Buscar</button>
-    </div>
-    </form>-->
-
-    <form col-4, mt-5>
+    <form onsubmit="return false">
         <div class="col-4">
           <label for="buscador" class="form-label">Artista/Banda</label>
-          <input type="musical" class="form-control" id="buscador" aria-describedby="musical">
+          <input type="text" class="form-control" id="buscador" aria-describedby="musical">
         </div>
         <button type="submit" class="btn btn-primary" onclick="buscar()">Buscar</button>
       </form>
-
-
-
 
     <div class="container mt-5">
         <div class="row">
@@ -61,7 +31,7 @@
                 <div id="banda"></div>
             </div>
             <div class="col-7">
-                <h id="nombre"> </h1>
+                <h2 id="nombre"> </h2>
                 <div>
                     <h6 id="genero"></h6>
                     <h6 id="estilo"></h6>
@@ -69,8 +39,6 @@
                 <a id="webSite" img src="musica.js"></a>
 
                 <div id="logo"></div>
-
-
             </div>
         </div>
     </div>
@@ -82,10 +50,7 @@
 
     <div class="container mt-5">
         <h3>Discografia</h3>
-        <div id="discografia" class="row col-8">
-
-        </div>
-
+        <div id="discografia" class="row col-8"></div>
     </div>
 
     <script src="musica.js"></script>

@@ -1,4 +1,11 @@
+
+
 img{
-    max-width: 300px;
-    max-height: 400px;
+    width: 100%;
+    border: 1px solid black;
 }
+
+h2{
+    font-size: 60px;
+}
+
